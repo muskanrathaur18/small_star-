@@ -21,7 +21,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" onClick={handleNavClick} className="flex items-center space-x-2">
           <div className="flex items-center">
-            <div className="w-44 h-10 rounded-sm flex items-center justify-center mr-2">
+            <div className="w-[227px] h-[43px] rounded-sm flex items-center justify-center mr-2">
               <img src='/images/Logo.png' alt="Wealth Builders Logo"/>
             </div>
           </div>

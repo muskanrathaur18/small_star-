@@ -35,8 +35,8 @@ const Testimonial = () => {
 
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Header */}
-        <div className="mb-12">
-          <h2 className="text-[50px] Myanmar Khyay mb-4">
+        <div className="mb-4">
+          <h2 className="sm:text-[50px] text-[26px] Myanmar Khyay mb-4">
             What People Are Saying <br /> About Our Services
           </h2>
           <p className="text-gray-500 text-[16px] Montserrat md:absolute md:right-20 md:top-20 max-w-xs">
@@ -66,9 +66,9 @@ const Testimonial = () => {
 
                 {/* Text */}
                 <div className="flex-1 text-center md:text-left">
-                  <p className="text-[34px] text-gray-800 Montserrat mb-4">{item.text}</p>
-                  <h4 className="text-[23px] Myanmar Khyay text-gray-900">{item.name}</h4>
-                  <p className="text-gray-500 text-[16px] Montserrat">{item.position}</p>
+                  <p className="sm:text-[34px] text-[17px] text-gray-800 Montserrat mb-4">{item.text}</p>
+                  <h4 className="sm:text-[23px] text-[18px] Myanmar Khyay text-gray-900">{item.name}</h4>
+                  <p className="text-gray-500 sm:text-[16px] text-[10px] Montserrat">{item.position}</p>
                 </div>
 
                 {/* Arrows */}

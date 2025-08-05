@@ -33,15 +33,15 @@ const ServicesSection = () => {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-12">
         {/* Left Content */}
         <div className="lg:w-1/2">
-          <span className="inline-block bg-white text-gray-700 text-sm font-semibold px-6 py-2 rounded-full mb-6 shadow">
+          <span className="inline-block bg-white text-gray-700 text-[19px] sm:text-[17px] px-6 py-2 rounded-full mb-6 shadow">
             Service
           </span>
-          <h2 className="text-[34px] sm:text-[42px] lg:text-[47px] Myanmar Khyay mb-6 leading-tight">
+          <h2 className="text-[31px] sm:text-[47px] lg:text-[47px] Myanmar Khyay mb-6 leading-tight">
             INVEST WITH THE <br />
             <span className="text-blue-600">CONFIDENCE</span> <br />
             SUCCEED WITH EASE
           </h2>
-          <p className="text-[15px] sm:text-[16px] text-gray-600 Montserrat mb-10 leading-relaxed">
+          <p className="text-[18px] sm:text-[16px] text-gray-600 Montserrat mb-10 leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
             et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
@@ -57,7 +57,7 @@ const ServicesSection = () => {
           {services.map((item, index) => (
             <div
               key={index}
-              className={`rounded-xl p-6 shadow-md transition duration-300 ease-in-out ${
+              className={`rounded-3xl p-6 shadow-md transition duration-300 ease-in-out ${
                 item.active
                   ? "bg-white text-black hover:bg-black hover:text-white hover:shadow-[0_0_10px_2px_rgba(59,130,246,0.5)]"
                   : "bg-white text-black hover:bg-black hover:text-white hover:shadow-[0_0_10px_2px_rgba(59,130,246,0.5)]"
@@ -71,7 +71,7 @@ const ServicesSection = () => {
               <h4 className="text-[15px] Myanmar Khyay text-center mb-2">
                 {item.title}
               </h4>
-              <p className="text-center Montserrat text-[12px] sm:text-[13px] text-gray-600">
+              <p className="text-center Montserrat text-[12px] sm:text-[13px] text-gray-600 hover:text-white">
                 {item.desc}
               </p>
             </div>

@@ -34,7 +34,7 @@ export default function MeetOurTeam() {
         {/* Header */}
         <div className="mb-12 text-center md:text-left">
           <p className="text-blue-400 text-[20px] sm:text-[23px] Montserrat mb-2">Meet Our Team</p>
-          <h2 className="text-[32px] sm:text-[38px] md:text-[45px] Myanmar Khyay text-white leading-tight">
+          <h2 className="text-[33px]  sm:text-[45px] Myanmar Khyay text-white leading-tight">
             We Are Dedicated To Your<br className="hidden sm:block" />
             Financial Well-being
           </h2>

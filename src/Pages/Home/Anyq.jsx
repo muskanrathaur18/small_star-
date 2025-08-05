@@ -41,10 +41,10 @@ const FaqSection = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
         {/* Left Text Column */}
         <div className="md:w-1/2">
-          <h2 className="text-[32px] sm:text-[45px] md:text-[55px] Myanmar Khyay font-semibold mb-4 leading-tight">
+          <h2 className="text-[37px] sm:text-[55px]  Myanmar Khyay  mb-4 leading-tight">
             Any Questions? <br /> We Got You
           </h2>
-          <p className="text-gray-600 mb-6 text-[15px] sm:text-[16px] Montserrat">
+          <p className="text-gray-600 mb-4 text-[16px] sm:text-[16px] Montserrat">
             We are here to answer all your queries regarding investments, SIPs,
             mutual funds, and financial planning. Explore our FAQs or contact
             our expert team directly.
@@ -65,7 +65,7 @@ const FaqSection = () => {
                 className="flex justify-between items-center w-full text-left"
                 onClick={() => toggleFaq(index)}
               >
-                <span className="text-[17px] sm:text-[18px] Myanmar Khyay text-gray-900">
+                <span className="text-[11px] sm:text-[18px] Myanmar Khyay text-gray-900">
                   {faq.question}
                 </span>
                 {openIndex === index ? (
@@ -75,7 +75,7 @@ const FaqSection = () => {
                 )}
               </button>
               {openIndex === index && faq.answer && (
-                <p className="mt-2 text-[14px] sm:text-[15px] Montserrat text-gray-600">
+                <p className="mt-2 text-[11px] sm:text-[15px] Montserrat text-gray-600">
                   {faq.answer}
                 </p>
               )}

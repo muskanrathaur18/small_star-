@@ -11,7 +11,7 @@ const HeroAndWealthSection = () => {
         <div className="space-y-1 mt-20 w-full">
           {/* First Heading + Desktop Button */}
           <div className="flex gap-[10px] flex-wrap items-center justify-center md:justify-normal">
-            <h1 className="text-[40px] sm:text-[60px] md:text-[85px] text-Myanmar Khyay md:pl-24">
+            <h1 className="text-[31px] sm:text-[85px] Myanmar Khyay md:pl-24">
               EMPOWER YOUR
             </h1>
 
@@ -45,7 +45,7 @@ const HeroAndWealthSection = () => {
             </div>
 
             {/* Second Heading */}
-            <h1 className="text-[40px] sm:text-[60px] md:text-[85px] text-Myanmar Khyay mb-4">
+            <h1 className="text-[29px]  sm:text-[85px] Myanmar Khyay mb-6">
               FINANCIAL JOURNEY
             </h1>
           </div>
@@ -70,10 +70,10 @@ const HeroAndWealthSection = () => {
               </div>
             </div>
 
-            <button className="flex border border-black rounded-full overflow-visible text-sm font-medium bg-white shadow-md hover:shadow-lg transition-all duration-300 z-20 relative items-center gap-[12px] px-[12px] py-[8px]">
+            <button className="flex border border-black rounded-full overflow-visible text-[10px]  bg-white shadow-md hover:shadow-lg transition-all duration-300 z-20 relative items-center gap-[8px]  py-[2px] pl-1">
               <span className="flex items-center">Get Started</span>
               <span className="px-[16px] py-[4px] bg-black text-white flex items-center justify-center rounded-full">
-                <ArrowUpRight size={26} />
+                <ArrowUpRight size={20} />
               </span>
             </button>
           </div>
@@ -81,9 +81,9 @@ const HeroAndWealthSection = () => {
       </div>
 
       {/* === Wealth Builder Section === */}
-      <div className="bg-gray-900 pb-24 flex justify-between z-10 mt-10 relative">
+      <div className="bg-gray-900  flex justify-between z-10 mt-10 relative">
         {/* === Background Image Positioned === */}
-        <div className="absolute z-30 inset-0 top-[-60px] lg:top-[-100px] 2xl:top-[-180px] right-0 left-auto flex justify-end pointer-events-none w-[250px] h-[200px] sm:w-[400px] sm:h-[250px] lg:h-[529px] lg:w-[800px]">
+        <div className="absolute z-30 inset-0 top-[-60px] lg:top-[-100px] 2xl:top-[-180px] right-0 left-auto flex justify-end pointer-events-none w-[250px] h-[200px] sm:w-[420px] sm:h-[250px] lg:h-[529px] lg:w-[800px]">
           <img
             className="h-full w-full"
             src="/images/Simple-Letter.png"
@@ -96,7 +96,7 @@ const HeroAndWealthSection = () => {
             {/* Left Section - Stats */}
             <div className="text-white pl-[20px] sm:pl-28 pt-16 z-10">
               {/* Star Rating */}
-              <div className="flex items-center gap-1 mb-6">
+              <div className="flex items-center gap-1 ">
                 {[...Array(4)].map((_, i) => (
                   <Star key={i} className="w-4 h-4 fill-blue-400 text-blue-400" />
                 ))}
@@ -125,7 +125,7 @@ const HeroAndWealthSection = () => {
             </div>
 
             {/* Rotating Logo with Circular Text */}
-            <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 flex items-center justify-center mt-12 sm:mt-0">
+            <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 flex items-center justify-center  sm:mt-0">
               <img
                 src="/images/Vector 2.png"
                 alt="Logo"

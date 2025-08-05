@@ -29,9 +29,9 @@ export default function StandOutSection() {
     <div className="bg-gray-50 py-16">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-[33px] Myanmar Khyay text-gray-900 mb-2">What Make Us</h2>
-          <h2 className="text-[33px] Myanmar Khyay  text-gray-900">Stand Out From Rest ?</h2>
+        <div className="text-center mb-10">
+          <h2 className="text-[30px] sm:text-[33px] Myanmar Khyay text-gray-900 mb-2">What Make Us</h2>
+          <h2 className="text-[30px] sm:text-[33px] Myanmar Khyay  text-gray-900">Stand Out From Rest ?</h2>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -45,31 +45,31 @@ export default function StandOutSection() {
             <div className="grid grid-cols-2 gap-8">
               <div className="text-center">
                 <div className="mb-2">
-                  <AnimatedCounter end={120} suffix="K+" color="text-blue-600 text-[48px] Myanmar Khyay" />
+                  <AnimatedCounter end={120} suffix="K+" color="text-blue-600 text-[39px] Myanmar Khyay" />
                 </div>
-                <p className="text-[24px] Montserrat text-gray-700">Satisfied Customers</p>
+                <p className="text-[15px] Montserrat text-gray-700">Satisfied Customers</p>
               </div>
               <div className="text-center">
                 <div className="mb-2">
-                  <AnimatedCounter end={70} suffix="K+" color="text-blue-600 text-[48px] Myanmar Khyay"  />
+                  <AnimatedCounter end={70} suffix="K+" color="text-blue-600 text-[39px] Myanmar Khyay"  />
                 </div>
-                <p className="text-[24px] Montserrat text-gray-700">Positive Reviews</p>
+                <p className="text-[15px] Montserrat text-gray-700">Positive Reviews</p>
               </div>
               <div className="text-center">
                 <div className="mb-2">
-                  <AnimatedCounter end={120} suffix="Y+" color="text-blue-600 text-[48px] Myanmar Khyay" />
+                  <AnimatedCounter end={120} suffix="Y+" color="text-blue-600 text-[39px] Myanmar Khyay" />
                 </div>
-                <p className="text-[24px] Montserrat text-gray-700">Year Experience</p>
+                <p className="text-[15px] Montserrat text-gray-700">Year Experience</p>
               </div>
               <div className="text-center">
                 <div className="mb-2">
-                  <AnimatedCounter end={120} suffix="K+" color="text-blue-600 text-[48px] Myanmar Khyay" />
+                  <AnimatedCounter end={120} suffix="K+" color="text-blue-600 text-[39px] Myanmar Khyay" />
                 </div>
-                <p className="text-[24px] Montserrat text-gray-700">Happy Customers</p>
+                <p className="text-[15px] Montserrat text-gray-700">Happy Customers</p>
               </div>
             </div>
             <div className="mt-12">
-              <p className="text-gray-600 text-[22px] Montserrat">
+              <p className="text-gray-600 text-[18px] sm:text-[22px] Montserrat">
                 In Today Fast-Paced World Financial Stability and
                 Literacy play a crucial role in shaping our lives
               </p>

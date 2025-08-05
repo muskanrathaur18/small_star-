@@ -14,14 +14,14 @@ const EmpowerSection = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-[47px] leading-tight text-Myanmar Khyay mb-6">
+          <h2 className="text-[33px]  sm:text-[47px] leading-tight tMyanmar Khyay mb-6">
             EMPOWER YOU TO <br />
             BUILD A{" "}
             <span className="text-blue-500">STRONGER</span>{" "}
             <span className="text-blue-400">FINANCIAL</span> FUTURE
           </h2>
 
-          <p className="text-base sm:text-[16px] text-gray-300 Montserrat mb-6 leading-relaxed">
+          <p className="text-[21px] sm:text-[16px] text-gray-300 Montserrat mb-6 leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque
             penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -29,7 +29,7 @@ const EmpowerSection = () => {
             sem. Nulla consequat massa quis enim.
           </p>
 
-          <button className="bg-blue-600 hover:bg-blue-700 text-white text-sm sm:text-base px-6 py-2 rounded-full transition">
+          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold sm:text-[13px] px-6 py-2 rounded-full transition">
             Contact Us
           </button>
         </motion.div>
@@ -44,7 +44,7 @@ const EmpowerSection = () => {
           <img
             src="/images/ABOUT-US.png"
             alt="Empower Person"
-            className="rounded-2xl object-cover w-full max-w-[400px] mx-auto md:mx-0"
+            className="rounded-2xl object-cover w-full max-w-[400px] mx-auto md:mx-0 "
             loading="lazy"
           />
         </motion.div>

@@ -11,7 +11,7 @@ export default function Footer() {
             <img src="/images/Vector 2.png" alt="Logo" className="h-8" />
             <h2 className="text-lg font-semibold tracking-wide">WEALTH BUILDERS</h2>
           </div>
-          <p className="text-[18px] Montserrat text-gray-300 leading-relaxed">
+          <p className="text-[17px] sm:text-[20px] Montserrat text-gray-300 leading-relaxed">
             Ashirwaad 153, MIG ADA Colony,<br />
             Near Mamta Bakery, Preetam Nagar - 211011
           </p>
@@ -41,7 +41,7 @@ export default function Footer() {
 
         {/* Quick Navigate */}
         <div>
-          <h3 className="text-[22px] Myanmar Khyay mb-4">Quick Navigate</h3>
+          <h3 className="text-[21px]sm:text-[25px] Myanmar Khyay mb-4">Quick Navigate</h3>
           <ul className="space-y-2 text-[15px] Montserrat text-gray-300">
             <li>
               <a href="#" className="hover:text-white">About</a>
@@ -60,7 +60,7 @@ export default function Footer() {
 
         {/* Contact Us */}
         <div>
-          <h3 className="text-[22px] Myanmar Khyay mb-4">Contact Us</h3>
+          <h3 className="text-[21px]sm:text-[25px] Myanmar Khyay mb-4">Contact Us</h3>
           <p className="text-[15px] Montserrat text-gray-300 mb-2">
             +91 97957 20319
           </p>

@@ -29,17 +29,17 @@ const testimonials = [
 
 const Testimonial = () => {
   return (
-    <section className="relative bg-gray-50 py-16 px-6 md:px-20">
+    <section className="relative bg-gray-50 py-16 px-6 md:px-20" id="testimonial">
       {/* Background Design */}
       <div className="absolute inset-0 bg-[url('/bg-puzzle.png')] opacity-10 pointer-events-none"></div>
 
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-12">
-          <h2 className="text-4xl font-bold mb-4">
+          <h2 className="text-[50px] Myanmar Khyay mb-4">
             What People Are Saying <br /> About Our Services
           </h2>
-          <p className="text-gray-500 text-sm md:absolute md:right-20 md:top-20 max-w-xs">
+          <p className="text-gray-500 text-[16px] Montserrat md:absolute md:right-20 md:top-20 max-w-xs">
             Navigating Your Finance Together Trusted Financial Resources and People
           </p>
         </div>
@@ -66,13 +66,13 @@ const Testimonial = () => {
 
                 {/* Text */}
                 <div className="flex-1 text-center md:text-left">
-                  <p className="text-2xl text-gray-800 italic mb-4">{item.text}</p>
-                  <h4 className="font-bold text-gray-900">{item.name}</h4>
-                  <p className="text-gray-500 text-sm">{item.position}</p>
+                  <p className="text-[34px] text-gray-800 Montserrat mb-4">{item.text}</p>
+                  <h4 className="text-[23px] Myanmar Khyay text-gray-900">{item.name}</h4>
+                  <p className="text-gray-500 text-[16px] Montserrat">{item.position}</p>
                 </div>
 
                 {/* Arrows */}
-                <div className="flex gap-3 mt-4 md:mt-0">
+                <div className="flex gap-3 mt-4 md:mt-60">
                   <button className="custom-prev w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 hover:bg-gray-300">
                     <ChevronLeft size={20} />
                   </button>

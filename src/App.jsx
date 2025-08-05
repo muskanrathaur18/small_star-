@@ -1,28 +1,46 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+
 import Navbar from './common/Navbar';
 import Footer from './common/Footer';
 
 // Page Components
 import Home from './Pages/Home/Home';
-import About from './Pages/aboutus/About';
 import Services from './Pages/services/Services';
 import Contact from './Pages/contactus/Contactus';
 import Testimonial from './Pages/testimonial/Testimonial';
+
+function ScrollToHashElement() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
+
+  return null;
+}
 
 function App() {
   return (
     <>
       <Navbar />
 
+      {/* Scroll handler for #aboutus, #contact, etc. */}
+      <ScrollToHashElement />
+
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
+        {/* Removed /#aboutus – it's now part of / with scroll */}
+        {/* <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/testimonial" element={<Testimonial />} />
-
-       
+        <Route path="/testimonial" element={<Testimonial />} /> */}
       </Routes>
 
       <Footer />

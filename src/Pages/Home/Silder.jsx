@@ -7,34 +7,30 @@ const BrandCollaborationSwiper = () => {
     const swiper = swiperRef.current;
     if (!swiper) return;
 
-    // Clone content for seamless scroll
+    // Duplicate content for seamless scrolling
     swiper.innerHTML += swiper.innerHTML;
-
-    let scrollAmount = 0;
 
     const autoScroll = () => {
       if (swiper.scrollLeft >= swiper.scrollWidth / 2) {
-        swiper.scrollLeft = 0; // Reset to beginning
+        swiper.scrollLeft = 0;
       } else {
-        swiper.scrollLeft += 1; // Smooth scroll
+        swiper.scrollLeft += 1;
       }
     };
 
-    const interval = setInterval(autoScroll, 20); // 20ms for smoother effect
-
+    const interval = setInterval(autoScroll, 20);
     return () => clearInterval(interval);
   }, []);
 
-  // Brand logo component
-  const BrandLogo = ({ imageSrc, brandName = "BRAND" }) => (
-    <div className="flex-shrink-0 w-32 h-32 mx-8 flex items-center justify-center">
-      <div className="w-24 h-24 rounded-full border-2 border-gray-400 flex items-center justify-center relative overflow-hidden bg-white">
+  const BrandLogo = ({ imageSrc, brandName }) => (
+    <div className="flex-shrink-0 mx-6 flex items-center justify-center w-[80px] md:w-[120px]">
+      <div className="w-[60px] md:w-[100px] h-[60px] md:h-[100px] rounded-full border-2 border-gray-400 flex items-center justify-center relative overflow-hidden bg-white">
         <img
           src={imageSrc}
           alt={brandName}
-          className="w-full h-full object-cover rounded-full"
+          className="w-full h-full object-contain p-2"
         />
-        <div className="absolute inset-0 rounded-full border border-gray-500 opacity-50"></div>
+        <div className="absolute inset-0 rounded-full border border-gray-500 opacity-50" />
       </div>
     </div>
   );
@@ -52,8 +48,8 @@ const BrandCollaborationSwiper = () => {
 
   return (
     <div className="bg-gray-900 py-16">
-      <div className="text-center mb-12">
-        <h2 className="text-white text-xl font-medium tracking-wider">
+      <div className="text-center mb-10 px-4">
+        <h2 className="text-white text-xl md:text-2xl font-semibold tracking-widest Myanmar Khyay">
           BRANDS WE HAVE COLLABORATED WITH
         </h2>
       </div>
@@ -61,17 +57,33 @@ const BrandCollaborationSwiper = () => {
       <div className="relative overflow-hidden">
         <div
           ref={swiperRef}
-          className="flex items-center overflow-x-hidden whitespace-nowrap scroll-smooth"
-          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          className="flex items-center whitespace-nowrap overflow-x-hidden scroll-smooth"
+          style={{
+            WebkitOverflowScrolling: "touch",
+            scrollbarWidth: "none",
+          }}
         >
           {brands.map((brand, index) => (
-            <BrandLogo key={index} brandName={brand.name} imageSrc={brand.image} />
+            <BrandLogo
+              key={`brand1-${index}`}
+              brandName={brand.name}
+              imageSrc={brand.image}
+            />
+          ))}
+
+          {/* duplicate for seamless scroll */}
+          {brands.map((brand, index) => (
+            <BrandLogo
+              key={`brand2-${index}`}
+              brandName={brand.name}
+              imageSrc={brand.image}
+            />
           ))}
         </div>
 
         {/* Gradient overlays */}
-        <div className="absolute left-0 top-0 w-32 h-full bg-gradient-to-r from-gray-900 to-transparent pointer-events-none" />
-        <div className="absolute right-0 top-0 w-32 h-full bg-gradient-to-l from-gray-900 to-transparent pointer-events-none" />
+        <div className="absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-gray-900 to-transparent pointer-events-none" />
+        <div className="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-gray-900 to-transparent pointer-events-none" />
       </div>
     </div>
   );

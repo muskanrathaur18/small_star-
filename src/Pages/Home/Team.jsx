@@ -30,40 +30,38 @@ export default function MeetOurTeam() {
 
   return (
     <div className="bg-gray-900 py-16">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="mb-12">
-          <p className="text-blue-400 text-lg font-sm mb-4 pl-4">Meet Our a Team</p>
-          <h2 className="text-4xl md:text-4xl font-bold text-white leading-tight pl-4">
-            We Are Dedicated For Your<br />
+        <div className="mb-12 text-center md:text-left">
+          <p className="text-blue-400 text-[20px] sm:text-[23px] Montserrat mb-2">Meet Our Team</p>
+          <h2 className="text-[32px] sm:text-[38px] md:text-[45px] Myanmar Khyay text-white leading-tight">
+            We Are Dedicated To Your<br className="hidden sm:block" />
             Financial Well-being
           </h2>
         </div>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2"
+              className="bg-white rounded-2xl p-5 sm:p-6 shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2"
             >
               {/* Profile Image */}
-              <div className="mb-6">
-                <div className="w-full h-48 bg-gray-200 rounded-xl overflow-hidden">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+              <div className="w-full h-56 sm:h-48 bg-gray-200 rounded-xl overflow-hidden mb-5">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Member Info */}
               <div className="text-center">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">
+                <h3 className="text-[18px] Myanmar Khyay text-gray-900 mb-1">
                   {member.name}
                 </h3>
-                <p className="text-gray-600 font-medium">
+                <p className="text-gray-600 text-[15px] Montserrat">
                   {member.position}
                 </p>
               </div>

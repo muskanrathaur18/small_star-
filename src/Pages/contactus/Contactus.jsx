@@ -6,17 +6,17 @@ const Contact = () => {
       <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left Side - Contact Info */}
         <div>
-          <h2 className="text-[33px] sm:text-[60px] Myanmar Khyay mb-4">Get In Touch</h2>
-          <p className="text-gray-600 text-[13px] sm:text-[16px] Montserrat mb-8">
+          <h2 className="text-[33px] sm:text-[60px] mb-4" style={{ fontFamily: "font-family: 'Montserrat" }}>Get In Touch</h2>
+          <p className="text-gray-600 text-[13px] sm:text-[16px] mb-8" style={{ fontFamily: "font-family: 'Montserrat" }}>
             Empowering your journey toward a secure and successful financial future.
           </p>
 
           <div className="mb-6">
             <div className="flex items-center mb-2">
               <span className="text-blue-600 text-2xl mr-3">📍</span>
-              <p className="text-[14px] sm:text-[17px] Myanmar Khyay">OFFICE</p>
+              <p className="text-[14px] sm:text-[17px] " style={{ fontFamily: "font-family: 'Montserrat" }}>OFFICE</p>
             </div>
-            <p className="text-gray-700 text-[12px] sm:text-[15px] Montserrat ml-9">
+            <p className="text-gray-700 text-[12px] sm:text-[15px] ml-9" style={{ fontFamily: "font-family: 'Montserrat" }}>
               Ashirwaad 153, MIG ADA Colony, Near Mamta Bakery, Preetam Nagar - 211011
             </p>
           </div>
@@ -24,10 +24,10 @@ const Contact = () => {
           <div>
             <div className="flex items-center mb-2">
               <span className="text-blue-600 text-2xl mr-3">💬</span>
-              <p className="sm:text-[17px] text-[14px] Myanmar Khyay">GET IN TOUCH</p>
+              <p className="sm:text-[17px] text-[14px]" style={{ fontFamily: "font-family: 'Montserrat" }}>GET IN TOUCH</p>
             </div>
-            <p className="ml-9 text-gray-700 sm:text-[15px] text-[12px] Montserrat">+91 97957 20319</p>
-            <p className="ml-9 text-gray-700 sm:text-[15px] text-[12px] Montserrat">Example@123.gmail.com</p>
+            <p className="ml-9 text-gray-700 sm:text-[15px] text-[12px]" style={{ fontFamily: "font-family: 'Montserrat" }}>+91 97957 20319</p>
+            <p className="ml-9 text-gray-700 sm:text-[15px] text-[12px]" style={{ fontFamily: "font-family: 'Montserrat" }}>Example@123.gmail.com</p>
           </div>
         </div>
 
@@ -62,7 +62,7 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="w-full py-3 rounded bg-blue-600 hover:bg-blue-700 text-white font-semibold transition duration-300"
+              className="w-full py-3 rounded bg-blue-600 hover:bg-blue-700 text-white transition duration-300" style={{ fontFamily: "font-family: 'Montserrat" }}
             >
               Send Message
             </button>

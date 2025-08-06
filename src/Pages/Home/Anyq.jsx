@@ -41,17 +41,17 @@ const FaqSection = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
         {/* Left Text Column */}
         <div className="md:w-1/2">
-          <h2 className="text-[37px] sm:text-[55px]  Myanmar Khyay  mb-4 leading-tight">
+          <h2 className="text-[37px] sm:text-[55px]  mb-4 leading-tight" style={{ fontFamily: "Myanmar Khyay, sans-serif" }}>
             Any Questions? <br /> We Got You
           </h2>
-          <p className="text-gray-600 mb-4 text-[16px] sm:text-[16px] Montserrat">
+          <p className="text-gray-600 mb-4 text-[16px] sm:text-[16px]" style={{ fontFamily: "font-family: 'Montserrat" }}>
             We are here to answer all your queries regarding investments, SIPs,
             mutual funds, and financial planning. Explore our FAQs or contact
             our expert team directly.
           </p>
           <a
             href="#"
-            className="text-blue-600 text-[18px] sm:text-[21px] Montserrat inline-flex items-center gap-1 hover:underline"
+            className="text-blue-600 text-[18px] sm:text-[21px] inline-flex items-center gap-1 hover:underline"style={{ fontFamily: "font-family: 'Montserrat" }}
           >
             More FAQs <span className="ml-1">→</span>
           </a>
@@ -65,7 +65,7 @@ const FaqSection = () => {
                 className="flex justify-between items-center w-full text-left"
                 onClick={() => toggleFaq(index)}
               >
-                <span className="text-[11px] sm:text-[18px] Myanmar Khyay text-gray-900">
+                <span className="text-[11px] sm:text-[18px]  text-gray-900" style={{ fontFamily: "Myanmar Khyay, sans-serif" }}>
                   {faq.question}
                 </span>
                 {openIndex === index ? (
@@ -75,7 +75,7 @@ const FaqSection = () => {
                 )}
               </button>
               {openIndex === index && faq.answer && (
-                <p className="mt-2 text-[11px] sm:text-[15px] Montserrat text-gray-600">
+                <p className="mt-2 text-[11px] sm:text-[15px] text-gray-600" style={{ fontFamily: "font-family: 'Montserrat" }}>
                   {faq.answer}
                 </p>
               )}

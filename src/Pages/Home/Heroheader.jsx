@@ -11,7 +11,7 @@ const HeroAndWealthSection = () => {
         <div className="space-y-1 mt-20 w-full">
           {/* First Heading + Desktop Button */}
           <div className="flex gap-[10px] flex-wrap items-center justify-center md:justify-normal">
-            <h1 className="text-[31px] sm:text-[85px] Myanmar Khyay md:pl-24">
+          <h1 className="text-[31px] sm:text-[85px] font-khyay md:pl-24" style={{ fontFamily: "Myanmar Khyay, sans-serif" }}>
               EMPOWER YOUR
             </h1>
 
@@ -45,7 +45,7 @@ const HeroAndWealthSection = () => {
             </div>
 
             {/* Second Heading */}
-            <h1 className="text-[29px]  sm:text-[85px] Myanmar Khyay mb-6">
+            <h1 className="text-[27px]  sm:text-[85px]  mb-6 " style={{ fontFamily: "Myanmar Khyay, sans-serif" }}>
               FINANCIAL JOURNEY
             </h1>
           </div>
@@ -83,7 +83,7 @@ const HeroAndWealthSection = () => {
       {/* === Wealth Builder Section === */}
       <div className="bg-gray-900  flex justify-between z-10 mt-10 relative">
         {/* === Background Image Positioned === */}
-        <div className="absolute z-30 inset-0 top-[-60px] lg:top-[-100px] 2xl:top-[-180px] right-0 left-auto flex justify-end pointer-events-none w-[250px] h-[200px] sm:w-[420px] sm:h-[250px] lg:h-[529px] lg:w-[800px]">
+        <div className="absolute z-30 inset-0 top-[-60px] lg:top-[-100px] 2xl:top-[-130px] right-0 left-auto flex justify-end pointer-events-none w-[250px] h-[200px] sm:w-[420px] sm:h-[250px] lg:h-[539px] lg:w-[880px] ">
           <img
             className="h-full w-full"
             src="/images/Simple-Letter.png"
@@ -109,16 +109,16 @@ const HeroAndWealthSection = () => {
               {/* Stats */}
               <div className="mb-4">
                 <div className="flex items-baseline gap-1">
-                  <span className="text-[40px] sm:text-[60px] md:text-[85px] text-Myanmar Khyay">120</span>
-                  <span className="text-[40px] sm:text-[60px] md:text-[85px] text-blue-400 text-Myanmar Khyay">K+</span>
+                  <span className="text-[40px] sm:text-[60px] md:text-[85px]" style={{ fontFamily: "Myanmar Khyay, sans-serif" }}>120</span>
+                  <span className="text-[40px] sm:text-[60px] md:text-[85px] text-blue-400" style={{ fontFamily: "Myanmar Khyay, sans-serif" }}>K+</span>
                 </div>
-                <p className="text-gray-300 text-[15px] text-Montserrat mt-2">
+                <p className="text-gray-300 text-[15px]  mt-2" style={{ fontFamily: "font-family: 'Montserrat" }}>
                   Satisfied Customers
                 </p>
               </div>
 
               {/* Description */}
-              <div className="text-gray-400 text-[15px] text-Montserrat max-w-xs leading-relaxed">
+              <div className="text-gray-400 text-[15px] max-w-xs leading-relaxed" style={{ fontFamily: "font-family: 'Montserrat" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
                 commodo ligula eget dolor.
               </div>

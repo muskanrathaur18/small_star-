@@ -36,10 +36,10 @@ const Testimonial = () => {
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-4">
-          <h2 className="sm:text-[50px] text-[26px] Myanmar Khyay mb-4">
+          <h2 className="sm:text-[50px] text-[26px]  mb-4" style={{ fontFamily: "Myanmar Khyay, sans-serif" }}>
             What People Are Saying <br /> About Our Services
           </h2>
-          <p className="text-gray-500 text-[16px] Montserrat md:absolute md:right-20 md:top-20 max-w-xs">
+          <p className="text-gray-500 text-[16px]  md:absolute md:right-20 md:top-20 max-w-xs" style={{ fontFamily: "font-family: 'Montserrat" }}>
             Navigating Your Finance Together Trusted Financial Resources and People
           </p>
         </div>
@@ -66,9 +66,9 @@ const Testimonial = () => {
 
                 {/* Text */}
                 <div className="flex-1 text-center md:text-left">
-                  <p className="sm:text-[34px] text-[17px] text-gray-800 Montserrat mb-4">{item.text}</p>
-                  <h4 className="sm:text-[23px] text-[18px] Myanmar Khyay text-gray-900">{item.name}</h4>
-                  <p className="text-gray-500 sm:text-[16px] text-[10px] Montserrat">{item.position}</p>
+                  <p className="sm:text-[34px] text-[17px] text-gray-800  mb-4" style={{ fontFamily: "font-family: 'Montserrat" }}>{item.text}</p>
+                  <h4 className="sm:text-[23px] text-[18px]  text-gray-900" style={{ fontFamily: "Myanmar Khyay, sans-serif" }}>{item.name}</h4>
+                  <p className="text-gray-500 sm:text-[16px] text-[10px]" style={{ fontFamily: "font-family: 'Montserrat" }}>{item.position}</p>
                 </div>
 
                 {/* Arrows */}

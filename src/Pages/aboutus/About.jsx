@@ -14,14 +14,14 @@ const EmpowerSection = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className="text-[33px]  sm:text-[47px] leading-tight tMyanmar Khyay mb-6">
+          <h2 className="text-[30px]  sm:text-[47px] leading-tight mb-6" style={{ fontFamily: "Myanmar Khyay, sans-serif" }}>
             EMPOWER YOU TO <br />
             BUILD A{" "}
             <span className="text-blue-500">STRONGER</span>{" "}
             <span className="text-blue-400">FINANCIAL</span> FUTURE
           </h2>
 
-          <p className="text-[21px] sm:text-[16px] text-gray-300 Montserrat mb-6 leading-relaxed">
+          <p className="text-[21px] sm:text-[16px] text-gray-300  mb-6 leading-relaxed" style={{ fontFamily: "font-family: 'Montserrat" }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque
             penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -29,14 +29,14 @@ const EmpowerSection = () => {
             sem. Nulla consequat massa quis enim.
           </p>
 
-          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold sm:text-[13px] px-6 py-2 rounded-full transition">
+          <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold sm:text-[13px] px-6 py-2 rounded-full transition" style={{ fontFamily: "Myanmar Khyay, sans-serif" }}>
             Contact Us
           </button>
         </motion.div>
 
         {/* Right Image Section */}
         <motion.div
-          className="w-full md:w-1/2"
+          className="w-full md:w-1/2 "
           initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}

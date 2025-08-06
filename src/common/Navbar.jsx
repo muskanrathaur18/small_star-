@@ -29,13 +29,13 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-10">
-          <Link to="/#aboutus" onClick={handleNavClick} className="text-gray-700 text-Myanmar Khyay text-[19px] hover:text-blue-600 font-medium transition-colors">
+          <Link to="/#aboutus" onClick={handleNavClick} className="text-gray-700  text-[19px] hover:text-blue-600 font-medium transition-colors" style={{ fontFamily: "Myanmar Khyay, sans-serif" }}>
             About
           </Link>
-          <Link to="/#services" onClick={handleNavClick} className="text-gray-700 text-Myanmar Khyay text-[19px] hover:text-blue-600 font-medium transition-colors">
+          <Link to="/#services" onClick={handleNavClick} className="text-gray-700  text-[19px] hover:text-blue-600 font-medium transition-colors" style={{ fontFamily: "Myanmar Khyay, sans-serif" }}>
             Services
           </Link>
-          <Link to="/#testimonial" onClick={handleNavClick} className="text-gray-700 text-Myanmar Khyay text-[19px] hover:text-blue-600 font-medium transition-colors">
+          <Link to="/#testimonial" onClick={handleNavClick} className="text-gray-700  text-[19px] hover:text-blue-600 font-medium transition-colors" style={{ fontFamily: "Myanmar Khyay, sans-serif" }}>
             Testimonial
           </Link>
         </div>
@@ -43,7 +43,7 @@ const Navbar = () => {
         {/* Contact Button */}
         <div className="hidden md:block">
           <Link to="/#contact" onClick={handleNavClick}>
-            <button className="bg-blue-600 text-Montserrat text-[13px] font-bold text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">
+            <button className="bg-blue-600 text-Montserrat text-[13px] font-bold text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors" style={{ fontFamily: "Myanmar Khyay, sans-serif" }}>
               Contact Us
             </button>
           </Link>
@@ -65,18 +65,18 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden mt-4 pb-4">
           <div className="flex flex-col space-y-4">
-            <Link to="/about" onClick={handleNavClick} className="text-gray-700 hover:text-blue-600 font-medium transition-colors px-4 py-2">
+            <Link to="/about" onClick={handleNavClick} className="text-gray-700 hover:text-blue-600 font-medium transition-colors px-4 py-2" style={{ fontFamily: "Myanmar Khyay, sans-serif" }}>
               About
             </Link>
-            <Link to="/services" onClick={handleNavClick} className="text-gray-700 hover:text-blue-600 font-medium transition-colors px-4 py-2">
+            <Link to="/services" onClick={handleNavClick} className="text-gray-700 hover:text-blue-600 font-medium transition-colors px-4 py-2" style={{ fontFamily: "Myanmar Khyay, sans-serif" }}>
               Services
             </Link>
-            <Link to="/testimonial" onClick={handleNavClick} className="text-gray-700 hover:text-blue-600 font-medium transition-colors px-4 py-2">
+            <Link to="/testimonial" onClick={handleNavClick} className="text-gray-700 hover:text-blue-600 font-medium transition-colors px-4 py-2" style={{ fontFamily: "Myanmar Khyay, sans-serif" }}>
               Testimonial
             </Link>
             <div className="px-4 pt-2">
               <Link to="/contact" onClick={handleNavClick}>
-                <button className="w-full bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition-colors">
+                <button className="w-full bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition-colors" style={{ fontFamily: "Myanmar Khyay, sans-serif" }}>
                   Contact Us
                 </button>
               </Link>

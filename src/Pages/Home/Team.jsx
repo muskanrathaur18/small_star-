@@ -33,8 +33,8 @@ export default function MeetOurTeam() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12 text-center md:text-left">
-          <p className="text-blue-400 text-[20px] sm:text-[23px] Montserrat mb-2">Meet Our Team</p>
-          <h2 className="text-[33px]  sm:text-[45px] Myanmar Khyay text-white leading-tight">
+          <p className="text-blue-400 text-[20px] sm:text-[23px] mb-2" style={{ fontFamily: "font-family: 'Montserrat" }}>Meet Our Team</p>
+          <h2 className="text-[33px]  sm:text-[45px] text-white leading-tight" style={{ fontFamily: "Myanmar Khyay, sans-serif" }}>
             We Are Dedicated To Your<br className="hidden sm:block" />
             Financial Well-being
           </h2>
@@ -58,10 +58,10 @@ export default function MeetOurTeam() {
 
               {/* Member Info */}
               <div className="text-center">
-                <h3 className="text-[18px] Myanmar Khyay text-gray-900 mb-1">
+                <h3 className="text-[18px]  text-gray-900 mb-1" style={{ fontFamily: "Myanmar Khyay, sans-serif" }}>
                   {member.name}
                 </h3>
-                <p className="text-gray-600 text-[15px] Montserrat">
+                <p className="text-gray-600 text-[15px]" style={{ fontFamily: "font-family: 'Montserrat" }}>
                   {member.position}
                 </p>
               </div>
